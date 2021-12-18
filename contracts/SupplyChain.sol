@@ -133,11 +133,11 @@ contract SupplyChain {
   //      sure the buyer is refunded any excess ether sent. 
   // 6. call the event associated with this function!
   function buyItem(uint sku) public payable forSale(sku) paidEnough(items[sku].price) checkValue(sku) {
-   items[sku].buyer = msg.sender;
-   items[sku].seller.transfer(items[sku].price);
-   items[sku].state = State.Sold;
+    items[sku].buyer = msg.sender;
+    items[sku].seller.transfer(items[sku].price);
+    items[sku].state = State.Sold;
 
-   emit LogSold(sku);
+    emit LogSold(sku);
   }
 
   // 1. Add modifiers to check:
@@ -163,15 +163,15 @@ contract SupplyChain {
   }
 
   // Uncomment the following code block. it is needed to run tests
-   function fetchItem(uint _sku) public view
-     returns (string memory name, uint sku, uint price, uint state, address seller, address buyer)
-   { 
-     name = items[_sku].name;
-     sku = items[_sku].sku;
-     price = items[_sku].price;
-     state = uint(items[_sku].state);
-     seller = items[_sku].seller;
-     buyer = items[_sku].buyer;
-     return (name, sku, price, state, seller, buyer);
-   }
+  function fetchItem(uint _sku) public view
+    returns (string memory name, uint sku, uint price, uint state, address seller, address buyer)
+  { 
+    name = items[_sku].name;
+    sku = items[_sku].sku;
+    price = items[_sku].price;
+    state = uint(items[_sku].state);
+    seller = items[_sku].seller;
+    buyer = items[_sku].buyer;
+    return (name, sku, price, state, seller, buyer);
+  }
 }

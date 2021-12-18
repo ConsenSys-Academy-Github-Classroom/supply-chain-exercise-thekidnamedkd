@@ -80,48 +80,48 @@ struct` tests and proceed.
 
 **NOTE** Before proceeding, you should un-comment the  `fetchItem` function in the contract. This function is necessary to validate the remaining tests.
 
-  - [ ] should add an item with the provided name and price
+  - [x] should add an item with the provided name and price
     <details><summary>:book:</summary>
     use case: As a seller, I want to add an item for sale. I should 
     </details>
-  - [ ] should emit a LogForSale event when an item is added
+  - [x] should emit a LogForSale event when an item is added
     <details><summary>:book:</summary>
     use case: Whenever an item is added (placed for sale), the contract should
     emit a `LogForSale` event
     </details>
-  - [ ] should allow someone to purchase an item and update state accordingly
+  - [x] should allow someone to purchase an item and update state accordingly
     <details><summary>:book:</summary>
     use case: As a buyer, I want to purchase an item that is for sale.
     </details>
- - [ ] should error when not enough value is sent when purchasing an item
+ - [x] should error when not enough value is sent when purchasing an item
     <details><summary>:book:</summary>
     use case: A buyer will be notified when they do not have enough funds for the purchase
     </details>
-  - [ ] should emit LogSold event when and item is purchased
+  - [x] should emit LogSold event when and item is purchased
     <details><summary>:book:</summary>
     use case: Whenever an item is bought (sold), the contract should emit a "LogSold" event
     </details>
-  - [ ] should revert when someone that is not the seller tries to call shipItem()
+  - [x] should revert when someone that is not the seller tries to call shipItem()
     <details><summary>:book:</summary>
     use case: As a seller, only I can ship a bought item
     </details>
-  - [ ] should allow the seller to mark the item as shipped
+  - [x] should allow the seller to mark the item as shipped
     <details><summary>:book:</summary>
     use case : Whenever an item is shipped, the seller should be able to mark the item as shipped
     </details>
-  - [ ] should emit a LogShipped event when an item is shipped
+  - [x] should emit a LogShipped event when an item is shipped
     <details><summary>:book:</summary>
     use case: Whenever the item is shipped, the contract should emit a "LogShipped" event
     </details>
-  - [ ] should allow the buyer to mark the item as received
+  - [x] should allow the buyer to mark the item as received
     <details><summary>:book:</summary>
     use case: Whenever an item is recieved, the buyer should be able to mark the item as received
     </details>
-  - [ ] should revert if an address other than the buyer calls receiveItem()
+  - [x] should revert if an address other than the buyer calls receiveItem()
     <details><summary>:book:</summary>
     use case: As a buyer, only I can mark the item as received
     </details>
-  - [ ] should emit a LogReceived event when an item is received
+  - [x] should emit a LogReceived event when an item is received
     <details><summary>:book:</summary>
     use case: Whenever an item is received, the contract should emit a "LogReceived" event
     </details>
