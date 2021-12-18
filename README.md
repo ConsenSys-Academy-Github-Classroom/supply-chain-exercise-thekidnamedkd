@@ -32,7 +32,7 @@ and `only` which runs only that test. But what if more than one test have the
 
 ### State variables
 
-  - [ ] should have an owner
+  - [x] should have an owner
     <details><summary>:book:</summary>
 
     The contract should have an owner, of type address that is public.
@@ -40,7 +40,7 @@ and `only` which runs only that test. But what if more than one test have the
 
     </details>
 
-  - [ ] should have an skuCount
+  - [x] should have an skuCount
     <details><summary>:book:</summary>
 
     The contract will keep track of the
@@ -57,10 +57,10 @@ Items can exist in our Supply chain domain in a few states. In Solidity an
 `enum` can be used to represent these different states. Remove the `skip`
 annotation from the enum tests to proceed.
 
-  - [ ] should define `ForSale` for when an item is put on sale
-  - [ ] should define `Sold` for when an item has been purchased
-  - [ ] should define `Shipped` for when an item has been shippd to the buyer
-  - [ ] should define `Received` for when the shipped item has been received by the buyer
+  - [x] should define `ForSale` for when an item is put on sale
+  - [x] should define `Sold` for when an item has been purchased
+  - [x] should define `Shipped` for when an item has been shippd to the buyer
+  - [x] should define `Received` for when the shipped item has been received by the buyer
 
 ### Item struct
 
@@ -69,12 +69,12 @@ How do we describe an item in our supply chain? It is a union of properties:
 `struct` to model this Item. Remove the `skip` annotation from the `Item
 struct` tests and proceed.
 
-  - [ ] should have a `name`
-  - [ ] should have a `sku`
-  - [ ] should have a `price`
-  - [ ] should have a `state`
-  - [ ] should have a `seller`
-  - [ ] should have a `buyer`
+  - [x] should have a `name`
+  - [x] should have a `sku`
+  - [x] should have a `price`
+  - [x] should have a `state`
+  - [x] should have a `seller`
+  - [x] should have a `buyer`
 
 ### SupplyChain Use cases
 
